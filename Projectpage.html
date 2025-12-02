@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Projects — StaticDeploy</title>
+  <link rel="stylesheet" href="Projectpage.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1><a href="HomePage.html">StaticDeploy</a></h1>
+      <nav><a href="HomePage.html">Home</a> <a href="Projectpage.htm" class="active">Projects</a> <a href="Servicespage.htm">Services</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Project: Static Website CICD</h2>
+    <p>This repository demonstrates: Terraform provisioning of an EC2 instance + Nginx, and Jenkins pipeline to deploy updates via SSH.</p>
+
+    <section class="details">
+      <h3>How it works</h3>
+      <ol>
+        <li>Terraform provisions server & security group</li>
+        <li>UserData installs nginx, git and clones this repo</li>
+        <li>Jenkins pipeline runs on push: SSH -> git pull -> restart nginx</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <p>© StaticDeploy</p>
+    </div>
+  </footer>
+</body>
+</html>

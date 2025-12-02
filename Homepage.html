@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Static Site — Home</title>
+  <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">StaticDeploy</h1>
+      <nav class="main-nav">
+        <a href="HomePage.html" class="active">Home</a>
+        <a href="Projectpage.htm">Projects</a>
+        <a href="Servicespage.htm">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <h2>Deploy static websites automatically using Terraform & Jenkins</h2>
+      <p>CI/CD pipeline that deploys this static site to an EC2 instance. Make a small UI change, push — and Jenkins deploys it automatically.</p>
+      <p><a class="cta" href="Projectpage.htm">See Project</a></p>
+    </div>
+  </main>
+
+  <section class="features container">
+    <div class="feature">
+      <h3>Infrastructure as code</h3>
+      <p>Terraform creates your EC2 instance and security groups.</p>
+    </div>
+    <div class="feature">
+      <h3>Automated deployment</h3>
+      <p>Jenkins pipeline pulls changes and updates the web root.</p>
+    </div>
+    <div class="feature">
+      <h3>Simple static pages</h3>
+      <p>Lightweight HTML/CSS to demonstrate fast updates and deployments.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© StaticDeploy — Demo project</p>
+      <small>Built with Terraform + Jenkins</small>
+    </div>
+  </footer>
+</body>
+</html>
